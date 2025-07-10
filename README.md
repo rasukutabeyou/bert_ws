@@ -17,7 +17,7 @@ $cd ~/bert_ws/main
 $python bert_Fchuning.py --train ~/bert_ws/dataset/train --val ~/bert_ws/dataset/val
 $python Fchuning_model.py 
 ```
-###　実行例
+- 実行例
 ```
 $python Fchuning_model.py
 発言内容：あの、季節、季節的にはどれくらいの季節がよろしいですか？
