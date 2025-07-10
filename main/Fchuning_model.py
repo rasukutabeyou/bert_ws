@@ -3,8 +3,8 @@ import torch
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-model = AutoModelForSequenceClassification.from_pretrained("/home/sakai/sakai_dev/bert_ws/history/epoch1/my_model").to(device)
-tokenizer = AutoTokenizer.from_pretrained("/home/sakai/sakai_dev/bert_ws/history/epoch1/my_model")
+model = AutoModelForSequenceClassification.from_pretrained("main/my_model").to(device)
+tokenizer = AutoTokenizer.from_pretrained("main/my_model")
 
 #text = "あの、季節、季節的にはどれくらいの季節がよろしいですか？"
 

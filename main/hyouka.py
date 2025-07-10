@@ -6,7 +6,7 @@ from Fchuning_model import model_predict
 from tqdm import tqdm
 
 parser = ArgumentParser()
-parser.add_argument("--input",type=str,default="hoge")
+parser.add_argument("--test",type=str,default="dataset/test")
 
 args = parser.parse_args()
 
