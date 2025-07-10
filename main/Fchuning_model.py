@@ -6,7 +6,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 model = AutoModelForSequenceClassification.from_pretrained("main/my_model").to(device)
 tokenizer = AutoTokenizer.from_pretrained("main/my_model")
 
-#text = "あの、季節、季節的にはどれくらいの季節がよろしいですか？"
+text = "あの、季節、季節的にはどれくらいの季節がよろしいですか？"
 
 def model_predict(text):
     inputs = tokenizer(text, return_tensors="pt")
@@ -17,7 +17,7 @@ def model_predict(text):
         pred = torch.argmax(probs, dim=1).item()
     return pred, probs[0].tolist()
 
-#pred, hoge = model_predict(text)
+pred, hoge = model_predict(text)
 
-#print(f"発言内容: {text}")
-#print(f"予測ラベル: {pred}")
+print(f"発言内容: {text}")
+print(f"予測ラベル: {pred}")

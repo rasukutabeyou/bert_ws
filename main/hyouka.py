@@ -32,5 +32,5 @@ for i in tqdm(range(count), desc="推論中"):
         if pred == 1:
             result_1 += 1
 
-print(f"話者0の推論成功率：{result_0/label_0*100:.2f}%({result_0}/{label_0})")
-print(f"話者1の推論成功率：{result_1/label_1*100:.2f}%({result_1}/{label_1})")
+print(f"話者0の正答率：{result_0/label_0*100:.2f}%({result_0}/{label_0})")
+print(f"話者1の正答率：{result_1/label_1*100:.2f}%({result_1}/{label_1})")
